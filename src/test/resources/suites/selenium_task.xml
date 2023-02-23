@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Task" verbose="1">
+    <test name="Header Test">
+        <classes>
+            <class name="site_header.HeaderConsistencyTest"/>
+        </classes>
+    </test>
+    <test name="Search Test"  parallel="classes">
+        <classes>
+            <class name="search.SearchPackageTest"/>
+        </classes>
+    </test>
+</suite>
